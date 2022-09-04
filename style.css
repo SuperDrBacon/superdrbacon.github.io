@@ -1,7 +1,25 @@
-* {
+/* ccvbcvb {
     background-color: #582626;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #333;
+    line-height: 1.5;
+} */
+
+.normalText {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+.smallText {
+    font-size: 0.8em;
+    color: #333;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: rgb(189, 14, 14);
     line-height: 1.5;
 }
