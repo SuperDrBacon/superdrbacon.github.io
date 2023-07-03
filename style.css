@@ -37,3 +37,7 @@ main {
 .sidebar a:hover {
     background-color: #ddd;
 }
+
+.documentation {
+    flex: 1;
+}
