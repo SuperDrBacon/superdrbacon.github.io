@@ -23,9 +23,20 @@ html, body {
   /* Set the sidebar styles */
 .sidebar {
     width: 200px;
-    background-color: #f8f8f8;
+    background-color: #f1f1f1;
     float: left;
     padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
 }
 
   /* Set the documentation styles */
