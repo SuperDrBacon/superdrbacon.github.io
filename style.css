@@ -1,52 +1,42 @@
-body {
+/* body {
     margin: 0;
     border: 0px;
     padding: 0;
     height: fit-content;
     width: fit-content;
     display: flex;
-    flex-direction: column;
-}
-
-/* main {
-    margin-left: 200px;
-    padding: 20px;
 } */
-.main-container {
-    display: flex;
-    flex-direction: row;
+/* Reset default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
-  .main-container > * {
-    flex: 1;
-}
+  /* Set full width for the header */
 .header {
-    /* width: 100%; */
-    background-color: #333;
-    color: #fff;
+    width: 100%;
+    background-color: #f0f0f0;
+    text-align: center;
     padding: 20px;
-    box-sizing: border-box;
 }
+
+  /* Set the sidebar styles */
 .sidebar {
-    background-color: #f1f1f1;
     width: 200px;
-    /* float: left; */
-    padding-top: 20px;
-    box-sizing: border-box;
-}
-
-.sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-}
-.sidebar a:hover {
-    background-color: #ddd;
-}
-
-.documentation {
-    /* margin-left: 220px; */
+    background-color: #f8f8f8;
+    float: left;
     padding: 20px;
-    box-sizing: border-box;
+}
+
+  /* Set the documentation styles */
+.documentation {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+  /* Clear float and create a new formatting context */
+.main-container::after {
+    content: "";
+    display: table;
+    clear: both;
 }
