@@ -13,19 +13,18 @@ main {
 }
 
 .header {
-    background-color: #f1f1f1;
-    text-align: center;
     width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .sidebar {
     background-color: #f1f1f1;
-    height: 100vh;
     width: 200px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    overflow-x: hidden;
+    float: left;
     padding-top: 20px;
+    box-sizing: border-box;
 }
 
 .sidebar a {
@@ -38,6 +37,8 @@ main {
     background-color: #ddd;
 }
 
-/* .documentation {
-    flex: 1;
-} */
+.documentation {
+    margin-left: 220px;
+    padding: 20px;
+    box-sizing: border-box;
+}
