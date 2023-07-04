@@ -26,14 +26,18 @@ html, body {
     background-color: #f1f1f1;
     float: left;
     padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .sidebar a {
     display: block;
     margin-bottom: 10px;
+    padding: 10px;
     color: #333;
     padding: 16px;
     text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .sidebar a:hover {
