@@ -30,7 +30,8 @@ html, body {
 
 .sidebar a {
     display: block;
-    color: black;
+    margin-bottom: 10px;
+    color: #333;
     padding: 16px;
     text-decoration: none;
 }
