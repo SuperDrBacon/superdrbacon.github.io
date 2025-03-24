@@ -16,10 +16,11 @@ function toggleTheme() {
 
 // Initialize theme
 (function () {
-    if (localStorage.getItem('theme') === 'theme-dark') {
-        setTheme('theme-dark');
-    } else {
+    // Default to dark theme if no theme is stored
+    if (localStorage.getItem('theme') === 'theme-light') {
         setTheme('theme-light');
+    } else {
+        setTheme('theme-dark');
     }
     
     // Set up theme toggle button

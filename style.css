@@ -34,6 +34,8 @@
   --sidebar-active: #2d2d2d;
   --footer-bg: #1e1e1e;
   --footer-text: #e9ecef;
+  --hero-gradient-start: #1a1a2e;
+  --hero-gradient-end: #16213e;
 }
 
 /* General styles */
@@ -168,6 +170,11 @@ p {
   color: white;
   padding: 4rem 2rem;
   text-align: center;
+}
+
+/* Make hero section darker in dark mode */
+.theme-dark .hero {
+  background: linear-gradient(135deg, var(--hero-gradient-start, #1a1a2e) 0%, var(--hero-gradient-end, #16213e) 100%);
 }
 
 .hero-content {
