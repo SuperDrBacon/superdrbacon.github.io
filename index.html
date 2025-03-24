@@ -6,41 +6,140 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>KirkBot Documentation</title>
         <link rel="stylesheet" href="style.css">
-        <script src="code.js" async></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="code.js" defer></script>
         <noscript>You need to enable JavaScript to view the full site.</noscript>
     </head>
     <body>
-        <div class="header">
-            <h1>KirkBot Documentation</h1>
-            <p>Documentation for the KirkBot Discord bot.</p>
-        </div>
-        <main>
-            <div class="main-container">
-                <div class="sidebar">
-                    <h3>Overview</h3>
-                    <a href="#chapter1">Getting started</a>
-                    <a href="#chapter2">Features</a>
-                        <ul>
-                            <li><a href="#chapter2-1">Feature 1</a></li>
-                            <li><a href="#chapter2-2">Feature 2</a></li>
-                            <li><a href="#chapter2-3">Feature 3</a></li>
-                        </ul>
-                    <h3>Commands</h3>
-                    <a href="#chapter3">Chapter 3</a>
-                    <a href="#chapter4">Chapter 4</a>
-                </div>
-                <div class="documentation">
-                    <h1>My Discord Bot Documentation</h1>
-                    <h2 id="chapter1">Chapteer 1</h2>
-                        <p>Chapter 1 content goes here.</p>
-                    <h2 id="chapter2">Chapter 2</h2>
-                        <p>Chapter 2 content goes here.</p>
-                    <h2 id="chapter3">Chapter 3</h2>
-                        <p>Chapter 3 content goes here.</p>
-                    <h2 id="chapter4">Chapter 4</h2>
-                        <p>Chapter 4 content goes here.</p>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40" alt="KirkBot Logo" class="logo-img">
+                <span>KirkBot</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Features</a>
+                <a href="#" class="nav-link">Commands</a>
+                <a href="#" class="nav-link">Support</a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <button class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <header class="hero">
+            <div class="hero-content">
+                <h1>KirkBot Documentation</h1>
+                <p>A powerful Discord bot designed to enhance your server experience</p>
+                <div class="hero-buttons">
+                    <a href="#chapter1" class="btn btn-primary">Get Started</a>
+                    <a href="#chapter2" class="btn btn-secondary">View Features</a>
                 </div>
             </div>
+        </header>
+
+        <main class="container">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h3>Documentation</h3>
+                </div>
+                <div class="sidebar-content">
+                    <div class="sidebar-section">
+                        <h4>Overview</h4>
+                        <a href="#chapter1" class="sidebar-link">Getting started</a>
+                        <a href="#chapter2" class="sidebar-link">Features</a>
+                        <div class="sidebar-subsection">
+                            <a href="#chapter2-1" class="sidebar-sublink">Feature 1</a>
+                            <a href="#chapter2-2" class="sidebar-sublink">Feature 2</a>
+                            <a href="#chapter2-3" class="sidebar-sublink">Feature 3</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-section">
+                        <h4>Commands</h4>
+                        <a href="#chapter3" class="sidebar-link">Basic Commands</a>
+                        <a href="#chapter4" class="sidebar-link">Advanced Commands</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <section id="chapter1" class="content-section">
+                    <h2>Getting Started</h2>
+                    <p>Learn how to easily add KirkBot to your Discord server and set it up in minutes.</p>
+                    <div class="card">
+                        <h3>Installation</h3>
+                        <p>Chapter 1 content goes here. This explains how to invite the bot to your server.</p>
+                    </div>
+                </section>
+
+                <section id="chapter2" class="content-section">
+                    <h2>Features</h2>
+                    <p>Discover all the powerful features KirkBot has to offer.</p>
+                    
+                    <div class="card" id="chapter2-1">
+                        <h3>Feature 1</h3>
+                        <p>Detailed explanation of feature 1 and how to use it effectively.</p>
+                    </div>
+                    
+                    <div class="card" id="chapter2-2">
+                        <h3>Feature 2</h3>
+                        <p>Detailed explanation of feature 2 and all its options.</p>
+                    </div>
+                    
+                    <div class="card" id="chapter2-3">
+                        <h3>Feature 3</h3>
+                        <p>Comprehensive guide to feature 3 and best practices.</p>
+                    </div>
+                </section>
+
+                <section id="chapter3" class="content-section">
+                    <h2>Basic Commands</h2>
+                    <p>Learn the essential commands to get the most out of KirkBot.</p>
+                    <div class="card">
+                        <h3>Command Reference</h3>
+                        <p>Chapter 3 content goes here. This includes all basic commands.</p>
+                    </div>
+                </section>
+
+                <section id="chapter4" class="content-section">
+                    <h2>Advanced Commands</h2>
+                    <p>Master the advanced commands for power users.</p>
+                    <div class="card">
+                        <h3>Advanced Usage</h3>
+                        <p>Chapter 4 content goes here. This covers complex operations.</p>
+                    </div>
+                </section>
+            </div>
         </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>KirkBot</h4>
+                    <p>A modern Discord bot for server management and fun.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <a href="#">Home</a>
+                    <a href="#">Features</a>
+                    <a href="#">Support</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 KirkBot. All rights reserved.</p>
+            </div>
+        </footer>
     </body>
 </html>
