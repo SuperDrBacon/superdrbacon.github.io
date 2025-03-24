@@ -338,8 +338,10 @@ p {
   padding: 2rem 0 2rem 0; /* Add top padding to content */
 }
 
+/* Add padding to section targets for smooth scrolling */
 .content-section {
-  margin-bottom: 3rem;
+  padding-top: 2rem; /* Add extra padding at the top */
+  margin-top: -1rem; /* Counteract some of the padding to maintain visual spacing */
 }
 
 .content-section h2 {
@@ -370,6 +372,15 @@ p {
 .card h3 {
   color: var(--accent-primary);
   margin-bottom: 1rem;
+}
+
+.card[id] {
+  scroll-margin-top: 5rem; /* Add scroll margin for anchor links */
+}
+
+/* This ensures better anchor positioning with the fixed header */
+:target {
+  scroll-margin-top: 5rem;
 }
 
 /* Footer */

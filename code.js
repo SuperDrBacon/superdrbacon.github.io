@@ -155,4 +155,70 @@ function toggleTheme() {
         updateSidebarHighlight();
         // Any other initialization code
     });
+    
+    // Add smooth scrolling with offset for anchor links
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all links that point to an anchor on the same page
+        const anchorLinks = document.querySelectorAll('a[href^="#"]');
+        
+        // Add click handler to each anchor link
+        anchorLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Prevent default anchor jump behavior
+                e.preventDefault();
+                
+                // Get the target element
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    // Get the height of the navbar and any other fixed elements
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                    const offset = navbarHeight + 20; // Add some extra padding (20px)
+                    
+                    // Calculate the correct scroll position
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetPosition = targetPosition - offset;
+                    
+                    // Scroll smoothly to the target with offset
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update the URL hash without jumping
+                    history.pushState(null, null, '#' + targetId);
+                    
+                    // Highlight the active sidebar link
+                    setTimeout(updateSidebarHighlight, 500);
+                }
+            });
+        });
+        
+        // Handle initial page load with hash in URL
+        if (window.location.hash) {
+            // Get the target element from the URL hash
+            const targetId = window.location.hash.substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                // Wait a moment for the page to fully load
+                setTimeout(function() {
+                    // Get the height of the navbar
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                    const offset = navbarHeight + 20; // Add some extra padding
+                    
+                    // Calculate the correct scroll position
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetPosition = targetPosition - offset;
+                    
+                    // Scroll to the target with offset
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'auto'
+                    });
+                }, 100);
+            }
+        }
+    });
 })();
